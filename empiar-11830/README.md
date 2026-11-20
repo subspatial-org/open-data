@@ -17,9 +17,12 @@ Public S3 mirror of the cryo-plasmaFIB-milled *in situ* cryo-electron tomography
 
 All objects below live under `s3://subspatial-opendata/empiar-mirror/empiar-11830/`:
 
-| Sub-prefix | Contents | Format & Scale |
+| Sub-prefix / Object | Contents | Format & Scale |
 |---|---|---|
+| `11830.xml` | EMPIAR deposition metadata record | XML |
 | `(root / tilt series)` | Raw tilt-series frames and tilt series (~1,871 acquisition positions) | Raw cryo-ET frames & tilt series |
+| `data/Chlamy_Tomo_Annotations.xlsx` | Tomogram-level annotations and metadata table | Excel (`.xlsx`) |
+| `data/chlamy_visual_proteomics/` | Visual proteomics companion files and annotations | Companion dataset files |
 | `data/must_bin8/` | 1,805 bin8 reconstructed tomograms | MRC2014 (`.rec`), ~256 MiB each (~485 GB total) |
 | `data/must_bin4/` | bin4 reconstructed tomograms | MRC2014 |
 | `data/cryocare_bin4/` | 1,829 cryoCARE denoised bin4 tomograms | MRC2014 (`.mrc`), ~2 GB each (~3.9 TB total) |
